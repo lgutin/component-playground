@@ -1,0 +1,45 @@
+{
+  "name": "component-playground",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "agentation-mcp server & vite",
+    "build": "tsc --noEmit && vite build",
+    "postbuild": "node -e \"require('node:fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@amcharts/amcharts5": "^5.16.2",
+    "@ionic/react": "^8.8.2",
+    "@servicetitan/anvil2": "^3.5.0",
+    "@servicetitan/anvil2-ext-atlas": "^4.0.1",
+    "@servicetitan/anvil2-ext-charts": "^0.2.3",
+    "@servicetitan/anvil2-ext-common": "^0.7.0",
+    "@servicetitan/anvil2-ext-mwv": "^0.0.4",
+    "@servicetitan/anvil2-illustrations": "^1.0.1",
+    "@servicetitan/tokens": "^12.9.0",
+    "formstate": "^2.1.0",
+    "mobx": "^6.15.0",
+    "mobx-react": "^9.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "agentation": "^3.0.2",
+    "agentation-mcp": "^1.2.0",
+    "esbuild-plugin-svgr": "^3.1.1",
+    "eslint": "^10.1.0",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3",
+    "vite-plugin-svgr": "^4.5.0"
+  }
+}
