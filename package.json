@@ -36,7 +36,6 @@
     "@vitejs/plugin-react": "^6.0.1",
     "agentation": "^3.0.2",
     "agentation-mcp": "^1.2.0",
-    "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^10.1.0",
     "typescript": "^6.0.2",
     "vite": "^8.0.3",
